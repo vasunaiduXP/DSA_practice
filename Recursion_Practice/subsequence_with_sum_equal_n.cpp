@@ -66,7 +66,7 @@ bool sub(int i, vector<int> &ds,int s, int sum, vector<int> &arr,int  n) {
     s-=arr[i];
     if(sub(i+1,ds, s, sum, arr, n)==true) return true;
 
-
+    return false;
 }
 
 int main() {
