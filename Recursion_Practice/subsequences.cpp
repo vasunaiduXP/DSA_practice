@@ -1,4 +1,5 @@
 // subsequence : contiguous or non-contiguous sequence which follows order.
+//The problem of counting distinct subsequences is easy if all characters of input string are distinct. The count is equal to nC0 + nC1 + nC2 + … nCn = 2n.
 
 #include <bits/stdc++.h>
 using namespace std;
