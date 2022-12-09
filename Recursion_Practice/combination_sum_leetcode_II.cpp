@@ -15,7 +15,7 @@ public:
         }
 
         for(int i=ind; i<arr.size();++i) {
-            if(i!=0 && i>ind && arr[i]==arr[i-1]) continue;
+            if(i>ind && arr[i]==arr[i-1]) continue;
             if(arr[i]>tg) break; 
 
             ds.push_back(arr[i]);
