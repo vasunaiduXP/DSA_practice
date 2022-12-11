@@ -63,3 +63,28 @@ Constraints:
 All the integers of nums are unique.
 
 */
+
+class Solution {
+public:
+    vector<vector<int>> permute(vector<int>& nums) {
+        vector<vector<int>> res;
+
+        permute(0, res, nums);
+
+        return res;
+        
+    }
+
+    void permute(int ind, vector<vector<int>> &res, vector<int> & arr) {
+        if(ind==arr.size()) {
+            res.push_back(arr);
+            return;
+        }
+
+        for(int i=ind;i<arr.size();++i) {
+        swap(arr[ind], arr[i]);
+        permute(ind+1, res, arr);
+        swap(arr[ind], arr[i]);
+        }
+    }
+};
